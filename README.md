@@ -19,9 +19,11 @@ mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (
 The Suspension_Coil.csv is a dataset that shows PSI vlaues for multiple manufacturing lots. In this deliverable, we are trying to understand the manufacturing consistency across the different lots.
 ### Results
 Overall Summary:
+
 ![total_summary.png](Resources/total_summary.png) 
 
 Lot Summary:
+
 ![lot_summary.png](Resources/lot_summary.png) 
 
 ### Inference
