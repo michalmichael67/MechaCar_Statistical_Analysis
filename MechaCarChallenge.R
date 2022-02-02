@@ -5,7 +5,7 @@ library(dplyr)
 
 # read in the MecharCar_mpg csv
 library(tidyverse)
-mecha_car_mpg_table <- read.csv(file = 'MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
+mecha_car_mpg_table <- read.csv(file = 'Data/MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
 head(mecha_car_mpg_table)
 
 #perform linear regression with 6 variables
