@@ -64,4 +64,19 @@ Unlike the previous 2 lots, Lot 3 has a P-value of 0.04168 which is significant 
 
 From both deliverable 2 and 3, it is becoming more clear that there is something going on with the manufacturing at Lot 3. Hopefully, having a more clear understanding of where this issue is will allow MechaCars to fix it in the future.
 
-
+## Deliverable 4: Study Design: MechaCar vs Competition
+The purpose of this deliverable is to design a study that would allow a user to understand how MechaCar performs as compared to the competition. When a user buys a car, they simply want it to run perfectly all the time. Although this is not possible, understanding MechaCar's maintenance costs could be a positive for a potential buyer.
+### Metrics
+In this study, we are going to take a look at maintenance cost by city type (rural, suburban, urban). This would allow MechaCar to understand the variability in maintenace costs.
+### Hypothesis
+- H0: MechaCar vehicles have the same maintenance costs as its competitors across city types.
+- Ha: MechaCar vehicles have different maintenance costs as its competitors across city types.
+### Statistical Tests
+A 2 sample T-Test for the matched cities would show the difference in mean maintenace costs between MechaCar and its competition. For this study there would be 3, 2 sample T-tests:
+  1. Rural 
+  2. Suburban
+  3. Urban
+### Data
+To run this study, the necessary data is:
+  1. Main city the car is used in - perhaps this could be based on the address of the driver
+  2. Annual maintenance cost
