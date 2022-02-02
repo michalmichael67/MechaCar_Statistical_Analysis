@@ -38,6 +38,20 @@ lot_summary <- suspension_coil_table %>% group_by(Manufacturing_Lot) %>% summari
                                                                                    )
 
 
+# DELIVERABLE 3
+
+# use a t test to determine if the PSI across manufacturing lots is different than the pop mean of 1500 lbs per sq in
+t.test(suspension_coil_table$PSI, mu=1500)
+
+# use 3 tests to test if each lot has a PSI that is different than the pop mean of 1500 lbs per sq in
+lot_1 <- subset(suspension_coil_table, Manufacturing_Lot == "Lot1")
+lot_2 <- subset(suspension_coil_table, Manufacturing_Lot == "Lot2")
+lot_3 <- subset(suspension_coil_table, Manufacturing_Lot == "Lot3")
+
+t.test(lot_1$PSI, mu=1500)
+t.test(lot_2$PSI, mu=1500)
+t.test(lot_3$PSI, mu=1500)
+
 
 
 

@@ -29,3 +29,39 @@ Lot Summary:
 ### Inference
 If you only look at the overall summary data, it seems as though MechaCar is hitting its variance goal of less than 100 pounds per square inch (it is 62.29 per square inch). But, upon closer review, each lot has a very different variance which skews the overall numbers. Lot 3 has a very high variance of 170 while Lot 1 and Lot 2 have variances under 10. In fact, if MechaCar looked into the issue in Lot 3, it may be able to reduce the overall variance to be much lower than 62. 
 
+## Deliverable 3: T-Tests on Suspension Coils
+### Requirements
+In this deliverable, the goal is to understand whether the PSI is different than the population mean of 1,500 pounds per square inch. Similarly to deliverable 2, we will take a look at the overall PSI as compared to the population mean as well as the PSI per lot as compared to the population mean.
+### Results
+Overall T-test:
+
+![overall_t_test.png](Resources/overall_t_test.png) 
+
+T-Test per Lot:
+
+![per_lot_t_test.png](Resources/per_lot_t_test.png) 
+
+### Inference
+Overall Results:
+- Mean: 1498.78 
+- P-value: 0.06028
+This means that at a significance level of 0.05, there is not enough evidence to reject the null hypothesis. This would lead us to conclude that the three lots are statistically similar to the population mean of 1500.
+
+Lot 1:
+- Mean: 1500
+- P-value: 1
+Since the P-value is 1, there is not enough evidence to reject the null hypothesis. This would lead us to conclude that Lot 1 statistically similar to the population mean of 1500.
+
+Lot 2:
+- Mean: 1500.2
+- P-value: 0.6072
+Similarly to Lot 1, since the P-value is 0.6072, there is not enough evidence to reject the null hypothesis. This would lead us to conclude that Lot 2 statistically similar to the population mean of 1500.
+
+Lot 3:
+- Mean: 1496.14 
+- P-value: 0.04168
+Unlike the previous 2 lots, Lot 3 has a P-value of 0.04168 which is significant at a 0.05 level. This would allow us to reject the null hypothesis and conclude that the mean of this sample is statistically different than the population mean of 1500.
+
+From both deliverable 2 and 3, it is becoming more clear that there is something going on with the manufacturing at Lot 3. Hopefully, having a more clear understanding of where this issue is will allow MechaCars to fix it in the future.
+
+
